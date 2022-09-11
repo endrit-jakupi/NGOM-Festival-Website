@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Header */
+/* Top Message */
+.extra-info p{
+    background-color: rgb(40, 40, 40);
+}
+/* Navigation Bar */
+nav{
+    padding: 32px 10%;
+}
+.nav-links{
+    list-style-type: none;
+}
+.nav-links li{
+    padding: 0px 20px;
+}
+.nav-links li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* Festival name */
+.container h2 a{
+    text-decoration: none;
+    color: black;
+}
+/* Horizontal scroll text */
+.scroll {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.scroll pre {
+    display: inline-block;
+    animation: scroll 40s linear infinite;
+    font-size: 20px;
+}
+@keyframes scroll {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+}
+/* Main */
+/* All headings */
+.heading{
+    background-color: rgb(40, 40, 40);
+    margin: 10px 0;
+}
+/* Main picture and text */
+.showcase{
+    min-height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(20, 20, 20, 0.6),rgba(20, 20, 20, 0.6)),url(Images/crowd.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.about p{
+    font-size: 18px;
+}
+@media screen and (max-width: 992px){
+    .about img{
+        display: none;
+    }
+}
+/* Tickets */
+.pricing-header {
+    max-width: 700px;
+}
+/* Line-Up */
+.card img{
+    filter: grayscale(100%);
+}
+.card img:hover{
+    filter: grayscale(0%);
+}
+.lineup-msg{
+    font-size: 18px;
+}
+.row{
+    margin: 0 5px;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+}
+/* Footer */
+.footer{
+    background: rgb(40, 40, 40);
+    color: white;
+}
+.footer{
+    background: rgb(40, 40, 40);
+    color: white;
+}
+.contact-container{
+    width: 100%;
+    padding: 20px 60px 30px 40px;
+}
+.contact-container .contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-container .contact-content .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+.contact-content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: black;
+}
+.contact-content .left-side .details{
+    margin: 14px;
+    text-align: center;
+}
+.contact-content .left-side .details i{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 10px;
+}
+.contact-content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+}
+.contact-content .left-side .details .text-one,
+.contact-content .left-side .details .text-two{
+    font-size: 14px;
+    color: black;
+}
+.contact-container .contact-content .right-side{
+    width: 75%;
+    margin-left: 70px;
+}
+.contact-content .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: black;
+}
+.right-side .form-control{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+.right-side .form-control input {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+}
+.right-side .message-box{
+    min-height: 110px;
+}
+.right-side .form-control textarea{
+    padding-top: 6px;
+}
+.right-side .button{
+    display: inline-block;
+    margin-top: 12px;
+}
+@media (max-width: 950px) {
+    .contact-container{
+      width: 90%;
+      padding: 30px 40px 40px 35px ;
+    }
+    .contact-container .contact-content .right-side{
+     width: 75%;
+     margin-left: 55px;
+    }
+}
+@media (max-width: 820px) {
+    .contact-container{
+      margin: 40px 0;
+      height: 100%;
+    }
+    .contact-container .contact-content{
+      flex-direction: column-reverse;
+    }
+   .contact-container .contact-content .left-side{
+     width: 100%;
+     flex-direction: row;
+     margin-top: 40px;
+     justify-content: center;
+     flex-wrap: wrap;
+    }
+   .contact-container .contact-content .left-side::before{
+     display: none;
+    }
+   .contact-container .contact-content .right-side{
+     width: 100%;
+     margin-left: 0;
+    }
+}
+.submit-button{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 9px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.copyright p {
+    border-top: 2px solid rgba(0, 0, 0, 1);
+}
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+.form-control input {
+    border: 2px solid;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+.form-control input:focus {
+    outline: 0;
+}
+
+.form-control.success {
+    border-color: #09c372;
+}
+
+.form-control.error {
+    border-color: #ff3860;
+}
+
+.form-control .error {
+    color: #ff3860;
+    font-size: 15px;
+    height: 1px;
+    margin-top: 8px;
+}
+.socials img{
+    width: 40%;
+}
