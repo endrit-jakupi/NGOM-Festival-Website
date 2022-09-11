@@ -3,3 +3,4 @@ NGOM Festival is a website created to provide information and purchase online ti
 
 # Website is hosted online
 The website is hosted online in Netlify and it is available to view at any time by simply clicking the link below. 
+https://ngomfestival.netlify.app/#
